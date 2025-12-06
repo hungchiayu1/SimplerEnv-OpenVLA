@@ -1,5 +1,6 @@
 numpy<2.0
 # tensorflow[and-cuda]
+tensorflow==2.15.0
 tensorflow_datasets==4.9.4
 tensorflow_hub==0.16.0
 rlds==0.1.8
@@ -19,5 +20,10 @@ flax==0.8.1
 ml_collections
 wandb
 einops
-transformers
+transformers==4.54.1
 scipy==1.12.0
+gymnasium==0.28.1
+torch==2.5.0
+tocrhvision==0.20.0
+pandas
+matplotlib

@@ -70,6 +70,14 @@ if __name__ == "__main__":
             action_model_type='DiT-L',
             cfg_scale=1.5                     # cfg from 1.5 to 7 also performs well
         )
+        
+    elif args.policy_model =='nora1_5':
+        # assert args.ckpt_path is not None
+        from simpler_env.policies.nora1_5.nora1_5 import Nora1_5Inference
+        model = Nora1_5Inference( saved_model_path=args.ckpt_path,
+            policy_setup=args.policy_setup,
+            action_scale=args.action_scale,
+        )
     elif args.policy_model == "spatialvla":
         assert args.ckpt_path is not None
         from simpler_env.policies.spatialvla.spatialvla_model import SpatialVLAInference
